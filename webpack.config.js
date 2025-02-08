@@ -1,28 +1,38 @@
-const path = require('path');
+// webpack.config.js
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  mode: "development",
+  entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
-  mode: 'development',
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/template.html"],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+  ],
   module: {
     rules: [
       {
-        test: /\.css$/, // Match .css files
-        use: ['style-loader', 'css-loader'], // Apply style-loader and css-loader
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
-      // Optional: For SCSS/Sass files, use the following rule
       {
-        test: /\.scss$/, // Match .scss files
-        use: ['style-loader', 'css-loader', 'sass-loader'], // Apply loaders for SCSS
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 9000,
   },
 };
