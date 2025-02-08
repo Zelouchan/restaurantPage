@@ -14,6 +14,11 @@
     font-style: normal;
   }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 main {
   height: 100vh;
   width: 100vw;
@@ -40,7 +45,8 @@ header {
 
 #name {
     font-size: 5rem;
-    padding-left: 25px;
+    padding-left: 5%;
+    letter-spacing: 12px;
 }
 
 #logo {
@@ -52,8 +58,6 @@ header {
     background-position:center;
     margin: 25%;
   }
-
-
 
 nav {
     grid-area: nav;
@@ -70,7 +74,6 @@ ul {
   justify-content: flex-start; 
   align-items: flex-end;
   background-color: var(--colour1);
-
   margin: 0;
   list-style-type: none;
 }
@@ -97,14 +100,46 @@ li {
 
 #content {
   grid-area: content;
-
 }
 
 #main1 {
-    display: block;
+    display: grid;
     background-color: var(--colour2);
     height: 100%;
     width: 100%;
+    grid-template-rows: 2fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "intro intro"
+    "img text"
+    "img text";
+}
+
+#intro {
+  width: 60ch;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2% 0% 0% 5%;
+  line-height: 1.5;
+  grid-area: intro;
+}
+
+#img {
+  padding: 2% 0% 0% 10%;
+  height: 250px;
+  width: auto;
+  grid-area: img;
+}
+
+#text {
+  grid-area: text;
+  width: 30ch;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding-top: 10%;
 }
 
 #menu1 {

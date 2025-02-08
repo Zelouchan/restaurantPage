@@ -34,12 +34,6 @@ export function mainStructure() {
   ul.appendChild(about);
 }
 
-function active() {
-  document.getElementById("home").classList.add("active");
-  document.getElementById("menu").classList.remove("active");
-  document.getElementById("about").classList.remove("active");
-}
-
 window.addEventListener("load", function () {
   mainStructure();
   main();
