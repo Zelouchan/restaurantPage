@@ -21,3 +21,19 @@ export const food = [
   `<strong>Muffin</strong><p>A sweet and moist treat.</p>`,
   `<strong>Sandwich</strong><p>A satisfying and portable meal.</p>`,
 ];
+
+export const contact = [
+    `<h2>Contact Us</h2>`,
+    `<span><strong>Phone:</strong> (0041) 321-4669</span>`,
+    `<span><strong>Email:</strong> info@tastybean.com</span>`,
+    `<span><strong>Address:</strong> Easneye, sg12 8LX, Hertfordshire</span>`
+];
+
+export const hours = [
+    `<h2>Opening Hours</h2>`,
+    `<span><strong>Mon-Fri:</strong> 8.00 - 17:00</span>`,
+    `<span><strong>Sat:</strong> 8:00 - 15:00</span>`,
+    `<span><strong>Sun:</strong> 09:00 - 15:00</span>`
+];
+
+    
