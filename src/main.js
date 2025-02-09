@@ -1,10 +1,6 @@
 //content for the created elements
 import coffeeImage from "../assets/svg/tabitha-turner-KWZ-rg9o76A-unsplash.jpg";
-const firstText =
-"We are a cozy, non-profit coffee shop where every cup is brewed with love and purpose. Located in the heart of the community, we offer ethically sourced, delicious coffee while giving back. Our mission is simple: every purchase supports local charities, from feeding those in need to providing educational opportunities for youth. Whether you’re grabbing a quick espresso or enjoying a latte with friends, at The Tasty Bean, you’re making a difference with every sip.";
-const secondText =
-"At The Tasty Bean, we love dogs! Bring your furry friends along to enjoy a cozy atmosphere with you. Our pet-friendly space offers water bowls and treats, ensuring both you and your dog feel right at home!";
-
+import {firstText, secondText} from './constants.js'
 
 export function main() {
 // creates container element to allow for styling
