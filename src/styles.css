@@ -125,7 +125,7 @@ li {
   grid-area: intro;
 }
 
-#img {
+img {
   padding: 2% 0% 0% 10%;
   height: 250px;
   width: auto;

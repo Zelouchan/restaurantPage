@@ -1,10 +1,7 @@
-import { mainStructure, active } from './main.js';
-
 
 function active() {
-document.getElementById('about').classList.add('active');
-document.getElementById('home').classList.remove('active');
-document.getElementById('menu').classList.remove('active');
+    document.querySelectorAll(".link").forEach(el => el.classList.remove("active"));
+    document.getElementById("about").classList.add("active");  
 };
 
 window.addEventListener("load", function () {

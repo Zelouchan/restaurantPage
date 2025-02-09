@@ -2,9 +2,9 @@ import { mainStructure } from './index.js';
 
 
 function active() {
-    document.getElementById('menu').classList.add('active');
-    document.getElementById('home').classList.remove('active');
-    document.getElementById('about').classList.remove('active');
+    document.querySelectorAll(".link").forEach(el => el.classList.remove("active"));
+    document.getElementById("menu").classList.add("active");
+    
     };
 
 window.addEventListener("load", function () {
