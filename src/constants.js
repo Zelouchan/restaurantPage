@@ -26,7 +26,7 @@ export const contact = [
     `<h2>Contact Us</h2>`,
     `<span><strong>Phone:</strong> (0041) 321-4669</span>`,
     `<span><strong>Email:</strong> info@tastybean.com</span>`,
-    `<span><strong>Address:</strong> Easneye, sg12 8LX, Hertfordshire</span>`
+    `<span><strong>Address:</strong> 83 Wildersroad, Ware</span>`
 ];
 
 export const hours = [
