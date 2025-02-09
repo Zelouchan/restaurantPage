@@ -96,6 +96,10 @@ ul {
   font-size: calc(3.5vw + 10px);
 }
 
+.link:hover {
+  cursor: pointer;
+}
+
 .active {
   background-image: linear-gradient(90deg, var(--colour1) 10%, var(--colour2));
 }
